@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/b">
+
+    <TextView
+        android:id="@+id/textviewTitle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Song"
+        android:textSize="25sp"
+        android:textColor="@color/purple"></TextView>
+
+    <ImageButton
+        android:id="@+id/buttonPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:src="@drawable/previous"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/buttonPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:src="@drawable/play"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="234dp"
+        android:layout_marginLeft="234dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:src="@drawable/stop"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="332dp"
+        android:layout_marginLeft="332dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:src="@drawable/next"></ImageButton>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonPlay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="13dp"
+        android:progressTint="@color/purple"
+        android:thumbTint="@color/purple"></SeekBar>
+
+    <TextView
+        android:id="@+id/textViewTimeSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignLeft="@id/seekBar"
+        android:layout_alignRight="@+id/seekBar"
+        android:layout_marginBottom="12sp"
+        android:text="00:00"
+        android:textColor="@color/purple"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/textViewTimeTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignBaseline="@id/textViewTimeSong"
+        android:layout_alignEnd="@id/seekBar"
+        android:layout_alignRight="@+id/seekBar"
+        android:layout_alignBottom="@id/textViewTimeSong"
+        android:layout_marginBottom="12sp"
+        android:text="00:00"
+        android:textColor="@color/purple"
+        android:textSize="20sp"></TextView>
+
+    <ImageView
+        android:id="@+id/imageViewCD"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_above="@id/textViewTimeSong"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@null"
+        app:srcCompat="@drawable/cd" />
+
+    <Switch
+        android:id="@+id/switchLoop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textViewTimeSong"
+        android:layout_marginLeft="10dp"
+        ></Switch>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loop"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/switchLoop"
+        android:layout_toRightOf="@id/switchLoop"
+        android:textColor="@color/purple"></TextView>
+
+</RelativeLayout>
